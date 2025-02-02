@@ -1,0 +1,41 @@
+<div *ngIf="!hideHeader" class="header">
+  <button class="btn btn-link shadow-none" (click)="toggleSidebar($event)">
+    <fa-icon id="menuIcon" class="hover-hightlight" [icon]="faBars"
+      [ngStyle]="{'stroke': 'white', 'color': 'white'}" size="2x"></fa-icon>
+  </button>
+    <ul class="nav m-0 d-flex align-items-center">
+      <!-- Menu Icon -->
+      
+    </ul>
+  </div>
+ 
+ 
+  <!-- Sidebar Menu -->
+  <div class="sidebar" [ngClass]="{'sidebar-open': isSidebarOpen, 'sidebar-closed': !isSidebarOpen}">
+    <ul class="nav flex-column p-3">
+      <li class="nav-item">
+        <a class="nav-link text-white" routerLink="/mytasks"><i class="fas fa-tools"></i><span class="ms-3">My Tasks</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white"><i class="fa-solid fa-image"></i><span class="ms-3">My Captures</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white"><i class="fas fa-file-archive"></i><span class="ms-3">Archive Explorer</span></a>
+      </li>
+    </ul>
+ 
+    <!-- 3 Fields at the Bottom of the Sidebar -->
+    <div class="sidebar-bottom">
+      <ul class="nav flex-column p-3">
+        <li class="nav-item">
+            <a class="nav-link text-white"><i class="fa-solid fa-book-open-reader"></i><span class="ms-3">User Guide</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white"><i class="fa-solid fa-user-gear"></i><span class="ms-3">My Profile</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white"><i class="fas fa-sign-out"></i><span class="ms-3">Logout</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
