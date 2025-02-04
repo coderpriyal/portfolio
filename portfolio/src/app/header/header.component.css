@@ -1,59 +1,35 @@
-.header {
-    background-color: #1C2340;
-    height: 3.5rem;
-    position: fixed; /* Fix the header at the top */
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1050; /* Higher than the sidebar */
-  }
-   
-  .sidebar {
-    position: fixed;
-    top: 3.5rem; /* Offset the sidebar below the header */
-    left: 0;
-    width: 270px;
-    height: calc(100% - 3.5rem); /* Adjust sidebar height */
-    background-color: #1C2340 !important;
-    transition: transform 0.3s ease;
-    transform: translateX(-100%); /* Initially hidden */
-    z-index: 1040; /* Ensure sidebar is below the header */
-    font-size: 20px;
-  }
-   
-  .sidebar.sidebar-open {
-    transform: translateX(0); /* Open the sidebar */
-  }
-   
-  .sidebar.sidebar-closed {
-    transform: translateX(-100%); /* Hide the sidebar */
-  }
-   
-  .sidebar .nav {
-    flex-grow: 1; /* Ensure the nav menu uses the space before the bottom section */
-    padding-top: 1rem; /* Add some padding if needed */
-  }
-   
-  .sidebar-bottom {
-    position: absolute;  /* Take it out of the normal flow */
-    bottom: 20px;        /* Position the bottom section 20px from the bottom of the sidebar */
-    width: 100%;         /* Make the bottom section the full width of the sidebar */
-  }
-   
-  .navbar-icon {
-    height: 3.5rem; /* Adjust the height as needed */
-  }
-   
-  .nav-item {
-    padding-bottom: 8px;
-  }
-   
-  .btn {
-    --bs-btn-border-width: none !important;
-    border: 1px solid #2B344542 !important;
-    color: #f5f5f5 !important;
-    background-color: transparent;
-    height: 3.5rem;
-    width: 3.5rem;
-  }
-   
+.sidebar {
+  position: fixed;
+  top: 56px; /* Adjust according to navbar height */
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #343a40;
+  transition: 0.3s;
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.sidebar.show {
+  left: 0;
+}
+
+.sidebar .nav-link {
+  color: white;
+}
+
+.sidebar-bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #343a40;
+  padding: 10px 0;
+}
+
+.hover-highlight:hover {
+  color: #f8f9fa !important;
+}
+.nav-item
+{
+  font-size: 17px;
+}

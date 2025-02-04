@@ -13,24 +13,31 @@ import { RouterModule } from '@angular/router';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-  hideHeader: boolean = false;
+  // hideHeader: boolean = false;
+  // faBars = faBars;
+  // isSidebarOpen = false;
+  // toggleSidebar(event: MouseEvent) {
+  //   // Stop event propagation to prevent the click from being caught by the document listener
+  //   event.stopPropagation();
+  //   this.isSidebarOpen = !this.isSidebarOpen;
+  // }
+
+  // // Listen for clicks outside of the sidebar
+  // @HostListener('document:click', ['$event'])
+  // onClick(event: MouseEvent) {
+  //   const sidebar = document.querySelector('.sidebar');
+  //   const menuButton = document.getElementById('menuIcon');
+
+  //   // Close the sidebar if the click is outside the sidebar and menu button
+  //   if (sidebar && !sidebar.contains(event.target as Node) && menuButton !== event.target) {
+  //     this.isSidebarOpen = false;
+  //   }
+  // }
   faBars = faBars;
-  isSidebarOpen = false;
-  toggleSidebar(event: MouseEvent) {
-    // Stop event propagation to prevent the click from being caught by the document listener
+  sidebarVisible = false;
+
+  toggleSidebar(event: Event) {
     event.stopPropagation();
-    this.isSidebarOpen = !this.isSidebarOpen;
-  }
-
-  // Listen for clicks outside of the sidebar
-  @HostListener('document:click', ['$event'])
-  onClick(event: MouseEvent) {
-    const sidebar = document.querySelector('.sidebar');
-    const menuButton = document.getElementById('menuIcon');
-
-    // Close the sidebar if the click is outside the sidebar and menu button
-    if (sidebar && !sidebar.contains(event.target as Node) && menuButton !== event.target) {
-      this.isSidebarOpen = false;
-    }
+    this.sidebarVisible = !this.sidebarVisible;
   }
 }
