@@ -1,32 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { TranslateService } from '@ngx-translate/core';
-
-// Import JSON translation files manually
-import en from '../assets/i18n/en.json';
-import hi from '../assets/i18n/hi.json';
-
+import { Routes } from '@angular/router';
 @NgModule({
-  declarations: [],
+  declarations: [
+  ],
   imports: [
     CommonModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    
   ],
-  providers: [TranslateService]
+  providers: [],
+  bootstrap: []
 })
 export class AppModule {
-  constructor(private translate: TranslateService) {
-    // Add languages
-    translate.addLangs(['en', 'hi']);
-    translate.setDefaultLang('en');
-
-    // Set translations manually (no HTTP calls)
-    translate.setTranslation('en', en);
-    translate.setTranslation('hi', hi);
-
-    // Load previously selected language
-    const currentLanguage = localStorage.getItem('currentLanguage');
-    translate.use(currentLanguage || 'en');
-  }
 }
