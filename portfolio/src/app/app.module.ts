@@ -4,21 +4,18 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
-import { TranslateModule } from '@ngx-translate/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
-
+import { HomeComponent } from './home/home.component'
 
 @NgModule({
   declarations: [
     HeaderComponent,
-
+    HomeComponent
   ],
   imports: [
     CommonModule,
     FontAwesomeModule,
-    TranslateModule, 
-    TranslateModule.forRoot(),
     FormsModule,
     BrowserAnimationsModule
 

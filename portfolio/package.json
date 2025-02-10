@@ -24,10 +24,12 @@
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@ngx-translate/core": "^16.0.4",
     "@ngx-translate/http-loader": "^16.0.1",
+    "aos": "^2.3.4",
     "bootstrap": "^5.3.3",
     "portfolio": "file:",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
+    "typed.js": "^2.0.11",
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
