@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import Typed from 'typed.js';
 import { CommonModule } from '@angular/common';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
