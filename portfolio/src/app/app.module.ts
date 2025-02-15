@@ -6,24 +6,23 @@ import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component'
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
 import { SkillsComponent } from './skills/skills.component';
 @NgModule({
   declarations: [
     HeaderComponent,
     HomeComponent,
-    SkillsComponent
+    SkillsComponent,
+    AboutComponent,
   ],
   imports: [
     CommonModule,
     FontAwesomeModule,
     FormsModule,
-    BrowserAnimationsModule
-
-    
+    BrowserAnimationsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule {
-}
+export class AppModule {}
