@@ -1,12 +1,11 @@
 <!-- Navbar -->
-<!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container-fluid">
 
     <!-- Full Navbar (Visible on Larger Screens) -->
     <ul class="nav m-0 d-none d-lg-flex align-items-center me-auto">
       <li class="nav-item">
-        <a class="nav-link text-white" href = "#">
+        <a class="nav-link text-white" href="#">
           <i class="fa-solid fa-house"></i><span class="ms-3">Home</span>
         </a>
       </li>
@@ -14,21 +13,35 @@
 
     <ul class="nav m-0 d-none d-lg-flex align-items-center ms-auto">
       <li class="nav-item">
-        <a class="nav-link text-white" href = "#about"><i class="fa-solid fa-user"></i><span class="ms-3">About</span></a>
+        <a class="nav-link text-white" href="#about">
+          <i class="fa-solid fa-user"></i><span class="ms-3">About</span>
+        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white" href = "#skills"><i class="fa-solid fa-laptop-code"></i><span class="ms-3">Skills</span></a>
+        <a class="nav-link text-white" href="#skills">
+          <i class="fa-solid fa-laptop-code"></i><span class="ms-3">Skills</span>
+        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white" href = "#cv"><i class="fas fa-file-alt"></i><span class="ms-3">CV</span></a>
+        <a class="nav-link text-white" href="#cv">
+          <i class="fas fa-file-alt"></i><span class="ms-3">CV</span>
+        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white" href = "#projects"><i class="fas fa-tasks"></i><span class="ms-3">Projects</span></a>
+        <a class="nav-link text-white" href="#projects">
+          <i class="fas fa-tasks"></i><span class="ms-3">Projects</span>
+        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white" href = "#contact"><i class="fa-solid fa-address-book"></i><span class="ms-3">Contact</span></a>
+        <a class="nav-link text-white" href="#contact">
+          <i class="fa-solid fa-address-book"></i><span class="ms-3">Contact</span>
+        </a>
       </li>
-      
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#comment">
+          <i class="fa fa-comment" aria-hidden="true"></i><span class="ms-3">Comment</span>
+        </a>
+      </li>
     </ul>
 
     <!-- Menu Icon (Visible on Mobile) -->
@@ -40,42 +53,39 @@
   </div>
 </nav>
 
-
 <!-- Sidebar (Hidden on Large Screens, Shown When Menu Icon is Clicked) -->
 <div class="sidebar d-lg-none" [class.show]="sidebarVisible">
   <ul class="nav flex-column p-3">
     <li class="nav-item">
-      <a class="nav-link text-white" href = "home"><i class="fa-solid fa-house"></i><span class="ms-3">Home</span></a>
+      <a class="nav-link text-white" href="home">
+        <i class="fa-solid fa-house"></i><span class="ms-3">Home</span>
+      </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link text-white" href = "#about"><i class="fa-solid fa-user"></i><span class="ms-3">About</span></a>
+      <a class="nav-link text-white" href="#about">
+        <i class="fa-solid fa-user"></i><span class="ms-3">About</span>
+      </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link text-white" href = "#skills"><i class="fa-solid fa-laptop-code"></i><span class="ms-3">Skills</span></a>
+      <a class="nav-link text-white" href="#skills">
+        <i class="fa-solid fa-laptop-code"></i><span class="ms-3">Skills</span>
+      </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link text-white" href = "#cv"><i class="fas fa-file-alt"></i><span class="ms-3">CV</span></a>
+      <a class="nav-link text-white" href="#cv">
+        <i class="fas fa-file-alt"></i><span class="ms-3">CV</span>
+      </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link text-white" href = "#projects"><i class="fas fa-tasks"></i><span class="ms-3">Projects</span></a>
+      <a class="nav-link text-white" href="#projects">
+        <i class="fas fa-tasks"></i><span class="ms-3">Projects</span>
+      </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link text-white" href = "#contact"><i class="fa-solid fa-address-book"></i><span class="ms-3">Contact</span></a>
+      <a class="nav-link text-white" href="#contact">
+        <i class="fa-solid fa-address-book"></i><span class="ms-3">Contact</span>
+      </a>
     </li>
   </ul>
 </div>
 
-<!-- Sidebar Bottom (optional: if you want a footer-style section at the bottom) -->
-<!-- <div class="sidebar-bottom">
-  <ul class="nav flex-column p-3">
-    <li class="nav-item">
-      <a class="nav-link text-white"><i class="fa-solid fa-book-open-reader"></i><span class="ms-3">User Guide</span></a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link text-white"><i class="fa-solid fa-user-gear"></i><span class="ms-3">My Profile</span></a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link text-white"><i class="fas fa-sign-out"></i><span class="ms-3">Logout</span></a>
-    </li>
-  </ul>
-</div> -->

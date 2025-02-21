@@ -9,12 +9,16 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { SkillsComponent } from './skills/skills.component';
+import { ProjectComponent } from './project/project.component';
+import { CvComponent } from './cv/cv.component';
 @NgModule({
   declarations: [
     HeaderComponent,
     HomeComponent,
     SkillsComponent,
     AboutComponent,
+    ProjectComponent,
+    
   ],
   imports: [
     CommonModule,

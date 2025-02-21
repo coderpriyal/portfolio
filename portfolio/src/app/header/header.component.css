@@ -8,28 +8,29 @@
   transition: 0.3s;
   padding-top: 10px;
   font-size: 20px;
+  z-index: 1000;
 }
 
 .sidebar.show {
   left: 0;
 }
-
 .sidebar .nav-link {
   color: white;
+  font-size: 24px;
 }
-
-.sidebar-bottom {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: #343a40;
-  padding: 10px 0;
-}
-
 .hover-highlight:hover {
   color: #f8f9fa !important;
 }
 .nav-item
 {
   font-size: 17px;
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link i {
+  width: 25px; /* Ensures uniform width for icons */
+  text-align: center;
 }

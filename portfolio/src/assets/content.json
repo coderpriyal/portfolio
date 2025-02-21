@@ -1,0 +1,15 @@
+{
+  "about": {
+    "title": "About",
+    "name": "Priyal Keharia",
+    "role": "Front End Developer & Data Analyst",
+    "description": "Always eager to learn and contribute, I strive to build impactful and efficient solutions. My goal is to create impactful solutions that enhance user experiences and drive efficiency.",
+    "passions": ["Front-end development", "Data Analysis", "Mobile App Development"],
+    "details": {
+      "age": "21 years",
+      "email": "priyal.keharia@somaiya.edu",
+      "gender": "Female",
+      "degree": "BTech Computer Engineering"
+    }
+  }
+}
